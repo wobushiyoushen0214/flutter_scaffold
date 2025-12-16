@@ -32,9 +32,49 @@ class MyApp extends StatelessWidget {
           title: AppStrings.appName,
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primary),
+            brightness: Brightness.light,
+            scaffoldBackgroundColor: AppColors.backgroundLight,
+            colorScheme: const ColorScheme.light(
+              primary: AppColors.primary,
+              secondary: AppColors.secondary,
+              surface: AppColors.surfaceLight,
+              onSurface: AppColors.textPrimaryLight,
+            ),
             useMaterial3: true,
+            appBarTheme: const AppBarTheme(
+              backgroundColor: AppColors.backgroundLight,
+              elevation: 0,
+              iconTheme: IconThemeData(color: AppColors.textPrimaryLight),
+              titleTextStyle: TextStyle(
+                color: AppColors.textPrimaryLight,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
+          darkTheme: ThemeData(
+            brightness: Brightness.dark,
+            scaffoldBackgroundColor: AppColors.backgroundDark,
+            colorScheme: const ColorScheme.dark(
+              primary: AppColors.primary,
+              secondary: AppColors.secondary,
+              surface: AppColors.surfaceDark,
+              onSurface: AppColors.textPrimaryDark,
+            ),
+            useMaterial3: true,
+            appBarTheme: const AppBarTheme(
+              backgroundColor: AppColors.backgroundDark,
+              elevation: 0,
+              iconTheme: IconThemeData(color: AppColors.textPrimaryDark),
+              titleTextStyle: TextStyle(
+                color: AppColors.textPrimaryDark,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          themeMode: ThemeMode
+              .system, // Default to system, can be changed via Get.changeThemeMode
           initialRoute: AppPages.initial,
           getPages: AppPages.routes,
         );

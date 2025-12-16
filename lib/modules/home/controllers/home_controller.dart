@@ -2,15 +2,15 @@
  * @Author: LiZhiWei
  * @Date: 2025-12-15 15:04:27
  * @LastEditors: LiZhiWei
- * @LastEditTime: 2025-12-15 17:06:04
+ * @LastEditTime: 2025-12-15 17:35:57
  * @Description: 
  */
 import 'package:get/get.dart';
-import '../../../data/api/api_client.dart';
+// import '../../../data/api/api_client.dart';
 import '../../../common/utils/logger_util.dart';
 
 class HomeController extends GetxController {
-  final ApiClient _apiClient = ApiClient();
+  // final ApiClient _apiClient = ApiClient();
 
   final count = 0.obs;
   final isLoading = false.obs;
