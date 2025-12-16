@@ -42,3 +42,14 @@ android {
 flutter {
     source = "../.."
 }
+
+repositories {
+    flatDir {
+        dirs("libs")
+    }
+}
+
+dependencies {
+    // implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+    implementation(files("libs/SparkChain.aar"))
+}

@@ -2,7 +2,7 @@
  * @Author: LiZhiWei
  * @Date: 2025-12-15 15:05:09
  * @LastEditors: LiZhiWei
- * @LastEditTime: 2025-12-15 17:01:50
+ * @LastEditTime: 2025-12-16 11:03:15
  * @Description: 
  */
 import 'package:flutter/material.dart';
@@ -47,6 +47,11 @@ class HomeView extends GetView<HomeController> {
                       onPressed: controller.fetchData,
                       child: const Text('Simulate API Call'),
                     ),
+            ),
+            SizedBox(height: 20.h),
+            ElevatedButton(
+              onPressed: () => Get.toNamed('/chat'),
+              child: const Text('进入数字人对话'),
             ),
           ],
         ),
