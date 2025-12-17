@@ -10,8 +10,8 @@ import 'package:get/get.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'global.dart';
 import 'routes/app_pages.dart';
-import 'common/constants/app_strings.dart';
-import 'common/constants/app_colors.dart';
+import 'constants/app_strings.dart';
+import 'constants/app_colors.dart';
 
 void main() async {
   await Global.init();

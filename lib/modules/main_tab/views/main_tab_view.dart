@@ -10,8 +10,8 @@ import 'package:get/get.dart';
 import '../controllers/main_tab_controller.dart';
 import '../../home/controllers/home_controller.dart';
 import '../../home/views/home_view.dart';
-import '../../../common/constants/app_strings.dart';
-import '../../../common/constants/app_colors.dart';
+import '../../../constants/app_strings.dart';
+import '../../../constants/app_colors.dart';
 
 class MainTabView extends GetView<MainTabController> {
   const MainTabView({super.key});
